@@ -1,3 +1,9 @@
+I N S T A L L A T I O N
+(Please Install Katana into your machine to access the full potential of this tool)
+1. Clone the repository: git clone https://github.com/faiyazahmad07/xss_vibes
+2. Install the requirements file: pip3 install -r requirements
+3. Run the main.py file
+USAGE
 python3 main.py -f <filename> -o <output>
 
 -f: Filename that contains bunch of links
@@ -25,4 +31,4 @@ python3 main.py -u http://example.com/hpp/?pp=12 -o out.txt -w cloudflare
 
 Using PIPE
 
-cat katana.txt | python3 main.py --pipe -t 7
+cat katana.txt | python3 main.py --pipe -t 5
