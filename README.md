@@ -19,20 +19,20 @@ python3 main.py -f <filename> -o <output>
 --crawl: Crawl the links first and then find xss
 
 Using  multiple  headers:
-python3 main.py -f urls.txt -H "Cookies:test=123;id=asdasd, User-Agent: Mozilla/Firefox" -t 7 -o result.txt
+python3 main.py -f urls.txt -H "Cookies:test=123;id=asdasd, User-Agent: Mozilla/Firefox" -t 5 -o result.txt
 
 Using  single  header:
-python3 main.py -f urls.txt -H "Cookies:test=123;id=asdasd" -t 7 -o result.txt
+python3 main.py -f urls.txt -H "Cookies:test=123;id=asdasd" -t 5 -o result.txt
 
 Scanning single URL:
-python3 main.py -u http://example.com/hpp/?pp=12 -o out.txt
+python3 main.py -u http://example.com/hpp/?test=12 -o out.txt
 
 Detect waf & scan:
-python3 main.py -u http://example.com/hpp/?pp=12 -o out.txt --waf
+python3 main.py -u http://example.com/hpp/?test=12 -o out.txt --waf
 
 Specify waf manually:
 
-python3 main.py -u http://example.com/hpp/?pp=12 -o out.txt -w cloudflare
+python3 main.py -u http://example.com/hpp/?test=12 -o out.txt -w cloudflare
 
 Using PIPE
 
